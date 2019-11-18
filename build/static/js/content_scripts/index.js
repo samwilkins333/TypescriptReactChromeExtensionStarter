@@ -1,3 +1,3 @@
-(function showTitle() {
-    console.log(document);
+(function showInputs() {
+    console.log($(':input'));
 })();

@@ -1,15 +1,15 @@
 {
     "manifest_version": 2,
-    "name": "InTurn Extension",
+    "name": "Template Chrome Extension",
     "version": "1.0.0",
     "permissions": ["tabs", "activeTab", "storage"],
     "browser_action": {
         "default_popup": "index.html",
-        "default_title": "InTurn Extension"
+        "default_title": "Template Chrome Extension"
     },
     "content_scripts": [
         {
-          "js": ["./static/js/agents/index.js"],
+          "js": ["./static/js/libraries/jquery.js", "./static/js/content_scripts/index.js"],
           "matches": ["<all_urls>"]
         }
       ],
