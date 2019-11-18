@@ -9,8 +9,12 @@
     },
     "content_scripts": [
         {
-          "js": ["./static/js/libraries/jquery.js", "./static/js/content_scripts/index.js"],
+          "js": ["./static/js/libraries/jquery.js", "./static/js/content_scripts/greenhouse_finder.js"],
           "matches": ["<all_urls>"]
+        },
+        {
+          "js": ["./static/js/libraries/jquery.js", "./static/js/content_scripts/greenhouse_filler.js"],
+          "matches": ["*://boards.greenhouse.io/embed/*"]
         }
       ],
     "web_accessible_resources": ["assets/*"],
