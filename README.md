@@ -9,4 +9,5 @@ Here's how to get started:
 5) Select `Load unpacked` and, in the file picker, navigate to your project root, then select the `build` folder
 6) You should now see an `I` on a black square next to your browser bar. Clicking on it should reveal the CreateReactApp boilerplate UI.
 7) In a new tab, navigate to any valid webpage and, in the developer console, you'll see that the HTML document has been logged. This was the work of `src/content_scripts/index.js`
-8) Add any new content scripts (.js files) to `src/content_scripts` and edit the UI of the popup by either changing the first argument passed into the ReactDOM.render() in `src/index.tsx` or change the render() method in `src/App.tsx` as if you were making a React / TypeScript web application 
+8) Add any new content scripts (.js files) to `src/content_scripts`. These content scripts will be run automatically by the extension every time you load a page. For each script you add in the folder, add a corresponding new entry in `public/manifest.json` in the content_scripts array.
+9) Edit the UI of the popup by either changing the first argument passed into the ReactDOM.render() in `src/index.tsx` or change the render() method in `src/App.tsx` as if you were making a React / TypeScript web application 
