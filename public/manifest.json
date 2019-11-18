@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "InTurn Extension",
+    "version": "1.0.0",
+    "permissions": ["tabs", "activeTab", "storage"],
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_title": "InTurn Extension"
+    },
+    "content_scripts": [
+        {
+          "js": ["./static/js/agents/index.js"],
+          "matches": ["<all_urls>"]
+        }
+      ],
+    "web_accessible_resources": ["assets/*"],
+    "content_security_policy": "script-src 'self' 'unsafe-eval' 'sha256-2K48jw/UPkXAp1QbF9Iz8XyhesaX3DzRK4Kjtcy/y2Y='; object-src 'self'"
+  }
