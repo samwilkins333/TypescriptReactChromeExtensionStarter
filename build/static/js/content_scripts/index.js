@@ -1,0 +1,1 @@
+chrome.runtime.onMessage.addListener((request, { id }, sendResponse) => sendResponse(`Hey! I just got ${JSON.stringify(request)} from ${id}.`));

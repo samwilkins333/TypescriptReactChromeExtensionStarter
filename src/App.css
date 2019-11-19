@@ -4,12 +4,12 @@
   height: 300px;
 }
 
-.greenhouse-prompt {
+.prompt {
     cursor: grab;
     transition: 0.5s ease all;
 }
 
-.greenhouse-prompt:hover {
+.prompt:hover {
     color: red;
 }
 

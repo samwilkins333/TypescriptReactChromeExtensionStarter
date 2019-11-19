@@ -12,17 +12,9 @@ export default class App extends React.Component<{}> {
             <div className="App">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
-                    <p className={"greenhouse-prompt"} onClick={this.onClick}>
-                        Check page for embedded greenhouse.io application boards.
+                    <p className={"prompt"} onClick={this.onClick}>
+                        Send a test message to the active tab...
                     </p>
-                    <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn React
-                    </a>
                 </header>
             </div>
         );
