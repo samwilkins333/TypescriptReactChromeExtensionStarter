@@ -16,7 +16,7 @@
           "js": ["./static/js/libraries/jquery.js", "./static/js/content_scripts/greenhouse_filler.js"],
           "matches": ["*://boards.greenhouse.io/embed/*"]
         }
-      ],
-    "web_accessible_resources": ["assets/*"],
+    ],
+    "web_accessible_resources": ["assets/*"],   
     "content_security_policy": "script-src 'self' 'unsafe-eval' 'sha256-o+cqNCQncqnQydjsWJZzjp/T7iqqDfqTgBSsXpHx8yE='; object-src 'self'"
   }

@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:all": "npm run build && cpy ./src/content_scripts/* ./build/static/js/content_scripts && cpy ./src/libraries/* ./build/static/js/libraries"
+    "build:all": "npm run build && cpy ./src/content_scripts/* ./build/static/js/content_scripts && cpy ./src/libraries/* ./build/static/js/libraries && cpy ./src/background_scripts/* ./build/static/js/background_scripts"
   },
   "eslintConfig": {
     "extends": "react-app"
